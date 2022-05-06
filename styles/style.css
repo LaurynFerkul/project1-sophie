@@ -246,6 +246,7 @@ h1 {
   font-size: 4rem;
   line-height: 4.6rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h2,
@@ -254,6 +255,7 @@ h4 {
   font-weight: 700;
   letter-spacing: 0.05rem;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -286,11 +288,13 @@ ul {
 }
 
 a {
+  line-height: 1.45rem;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -328,7 +332,7 @@ button:focus {
 a {
   display: inline-block;
 }
-a.moreButton {
+a .moreButton {
   color: #2c2c2c;
   background-color: #05afc1;
   padding: 20px 40px;
@@ -339,15 +343,15 @@ a.moreButton {
   letter-spacing: 0.05rem;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-a.moreButton:hover {
+a .moreButton:hover {
   background-color: transparent;
   border: 2px solid #05afc1;
   color: #05afc1;
 }
-a.moreButton:focus {
+a .moreButton:focus {
   background-color: transparent;
   border: 2px solid #05afc1;
   color: #05afc1;
@@ -356,4 +360,36 @@ a.moreButton:focus {
 img {
   max-width: 100%;
   display: block;
+}
+
+nav {
+  background-color: #f6a823;
+  padding: 20px 0;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav h1 {
+  font-size: 2.1rem;
+  line-height: inherit;
+}
+nav a {
+  margin: 0 10px;
+  padding: 10px;
+  border: 2px solid transparent;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+nav a:hover {
+  color: #f0efed;
+  border-bottom: 2px solid #f0efed;
+}
+nav a:focus {
+  color: #f0efed;
+  border-bottom: 2px solid #f0efed;
 }

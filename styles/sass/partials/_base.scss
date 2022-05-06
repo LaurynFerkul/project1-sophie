@@ -34,7 +34,7 @@ button {
 a {
     display: inline-block;
 
-    &.moreButton {
+    .moreButton {
         color: $black;
         background-color: $accent;
         padding: 20px 40px;
@@ -45,7 +45,7 @@ a {
         letter-spacing: 0.05rem;
         text-align: center;
         cursor: pointer;
-        transition: 2s;
+        transition: 1s;
 
         &:hover {
             background-color: transparent;
