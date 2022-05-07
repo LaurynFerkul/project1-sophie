@@ -1,0 +1,42 @@
+header{
+    background-color: $orangeYellow;
+    height: 80vh;
+    justify-content: center;
+}
+
+.headerContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 30px;
+    .headerTextImage{
+        position: absolute;
+        top: -40px;
+        left: -40px;
+    }
+    .headerText{
+        margin: auto 0;
+        h2{
+            font-family: $headingFont;
+            font-size: 11vw;
+        }
+    }
+}
+
+
+    .headerImage {
+
+        height: 100%;
+        display: inherit;
+            img {
+            object-fit: cover;
+            transform: translateY(10%);
+            box-shadow: white 15px 15px;
+        }
+    }

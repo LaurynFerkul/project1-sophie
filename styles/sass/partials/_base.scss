@@ -33,8 +33,7 @@ button {
 
 a {
     display: inline-block;
-
-    .moreButton {
+    &.moreButton {
         color: $black;
         background-color: $accent;
         padding: 20px 40px;

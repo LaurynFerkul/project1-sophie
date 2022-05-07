@@ -332,7 +332,7 @@ button:focus {
 a {
   display: inline-block;
 }
-a .moreButton {
+a.moreButton {
   color: #2c2c2c;
   background-color: #05afc1;
   padding: 20px 40px;
@@ -346,12 +346,12 @@ a .moreButton {
   -webkit-transition: 1s;
   transition: 1s;
 }
-a .moreButton:hover {
+a.moreButton:hover {
   background-color: transparent;
   border: 2px solid #05afc1;
   color: #05afc1;
 }
-a .moreButton:focus {
+a.moreButton:focus {
   background-color: transparent;
   border: 2px solid #05afc1;
   color: #05afc1;
@@ -363,8 +363,8 @@ img {
 }
 
 nav {
+  padding: 20px 0 0;
   background-color: #f6a823;
-  padding: 20px 0;
 }
 nav ul {
   display: -webkit-box;
@@ -393,4 +393,58 @@ nav a:hover {
 nav a:focus {
   color: #f0efed;
   border-bottom: 2px solid #f0efed;
+}
+
+header {
+  background-color: #f6a823;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-right: 30px;
+}
+.headerContent .headerTextImage {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.headerContent .headerText {
+  margin: auto 0;
+}
+.headerContent .headerText h2 {
+  font-family: "Lora", serif;
+  font-size: 11vw;
+}
+
+.headerImage {
+  height: 100%;
+  display: inherit;
+}
+.headerImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-box-shadow: white 15px 15px;
+          box-shadow: white 15px 15px;
 }
