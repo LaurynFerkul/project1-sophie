@@ -666,3 +666,13 @@ header {
       flex-basis: calc(33.3333333333% - 20px);
   margin: 0 10px;
 }
+
+footer {
+  background-color: black;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 10px 0;
+}
