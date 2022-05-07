@@ -62,3 +62,44 @@
         object-fit: cover;
     }
 }
+
+.categories {
+    background-color: $whiteShade;
+    padding: 100px 0;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    
+        li {
+            flex-basis: calc(50% - 40px);
+            display: flex;
+            margin: 20px 20px;
+
+        }
+    }
+}
+
+.categoriesImage {
+    flex-basis: 10%;
+    margin-right: 20px;
+    position: relative;
+}
+
+.categoriesText {
+    flex-basis: 90%;
+}
+
+.icon {
+    background: orange;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    img {
+        width: 40%;
+    }
+}
