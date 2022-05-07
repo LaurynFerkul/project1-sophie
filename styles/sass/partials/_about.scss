@@ -65,7 +65,7 @@
 
 .categories {
     background-color: $whiteShade;
-    padding: 100px 0;
+    padding: 80px 0;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -102,4 +102,13 @@
     img {
         width: 40%;
     }
+}
+
+.backgroundImage {
+    min-height: 370px;
+    max-height: 400px;
+    background-image: url("../assets/home-image-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
