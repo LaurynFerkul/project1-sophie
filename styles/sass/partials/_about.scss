@@ -133,3 +133,16 @@
     flex-basis: calc(75% - 60px);
     margin-left: 60px;
 }
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    ul{
+        display: flex;
+        li {
+            flex-basis: calc((100% / 3) - 20px);
+            margin: 0 10px;
+        }
+    }
+}
