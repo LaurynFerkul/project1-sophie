@@ -5,3 +5,60 @@
         max-width: 80%;
     }
 }
+
+.favThings {
+    transform: translateY(-5%);
+    background: linear-gradient(90deg, $rustRed 51%, transparent 49%);
+    margin-bottom: 40px;
+    .favThingsContent{
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-5%);
+    }
+}
+
+.favThingsText{
+    flex-basis: calc(50% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 80px;
+}
+
+.favThingsImage {
+    flex-basis: calc(50%);
+    display: flex;
+    img {
+        object-fit: cover;
+    }
+}
+
+.travel {
+    transform: translateY(10%);
+    background: linear-gradient(90deg, transparent 51%, #f6a823 49%);
+    .travelContent{
+        transform: translateY(-5%);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.travelText {
+    flex-basis: calc(50% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: right;
+    margin-right: 80px;
+}
+
+.travelImage {
+    flex-basis: calc(50%);
+    display: flex;
+
+    img {
+        object-fit: cover;
+    }
+}

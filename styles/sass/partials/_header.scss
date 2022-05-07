@@ -1,6 +1,6 @@
 header{
     background-color: $orangeYellow;
-    height: 80vh;
+    height: 82vh;
     justify-content: center;
 }
 
@@ -8,6 +8,7 @@ header{
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .headerContent {

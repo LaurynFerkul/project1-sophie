@@ -273,6 +273,7 @@ h4 {
 p {
   font-weight: 400;
   line-height: 1.6rem;
+  margin: 20px 0;
 }
 
 ul,
@@ -295,6 +296,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .wrapper {
@@ -397,7 +399,7 @@ nav a:focus {
 
 header {
   background-color: #f6a823;
-  height: 80vh;
+  height: 82vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -411,6 +413,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .headerContent {
@@ -455,4 +460,102 @@ header {
 }
 .about p {
   max-width: 80%;
+}
+
+.favThings {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(51%, #a82706), color-stop(49%, transparent));
+  background: linear-gradient(90deg, #a82706 51%, transparent 49%);
+  margin-bottom: 40px;
+}
+.favThings .favThingsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.favThingsText {
+  -ms-flex-preferred-size: calc(50% - 80px);
+      flex-basis: calc(50% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 80px;
+}
+
+.favThingsImage {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.favThingsImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.travel {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(51%, transparent), color-stop(49%, #f6a823));
+  background: linear-gradient(90deg, transparent 51%, #f6a823 49%);
+}
+.travel .travelContent {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.travelText {
+  -ms-flex-preferred-size: calc(50% - 80px);
+      flex-basis: calc(50% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: right;
+  margin-right: 80px;
+}
+
+.travelImage {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.travelImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
