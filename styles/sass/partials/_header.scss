@@ -29,14 +29,13 @@ header{
     }
 }
 
+.headerImage {
 
-    .headerImage {
-
-        height: 100%;
-        display: inherit;
-            img {
-            object-fit: cover;
-            transform: translateY(10%);
-            box-shadow: white 15px 15px;
-        }
+    height: 100%;
+    display: inherit;
+        img {
+        object-fit: cover;
+        transform: translateY(10%);
+        box-shadow: white 15px 15px;
     }
+}

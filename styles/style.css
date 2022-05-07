@@ -335,7 +335,7 @@ a {
 a.moreButton {
   color: #2c2c2c;
   background-color: #05afc1;
-  padding: 20px 40px;
+  padding: 10px 30px;
   border: 2px solid #05afc1;
   font-size: 1rem;
   font-weight: 700;
@@ -447,4 +447,12 @@ header {
           transform: translateY(10%);
   -webkit-box-shadow: white 15px 15px;
           box-shadow: white 15px 15px;
+}
+
+.about {
+  padding: 100px 0 120px;
+  background-color: #f0efed;
+}
+.about p {
+  max-width: 80%;
 }
