@@ -90,7 +90,7 @@
 }
 
 .icon {
-    background: orange;
+    background: $orangeYellow;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -111,4 +111,25 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.journey {
+    padding: 80px 0;
+    background-color: $whiteShade;
+    .wrapper {
+        display: flex;
+    }
+}
+
+.journeyImage {
+    flex-basis: calc(25% - 40px);
+    img {
+        box-shadow: $orangeYellow 15px 15px;
+    }
+}
+
+.journeyText{
+    flex-basis: calc(75% - 60px);
+    margin-left: 60px;
 }

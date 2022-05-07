@@ -593,7 +593,7 @@ header {
 }
 
 .icon {
-  background: orange;
+  background: #f6a823;
   border-radius: 50%;
   width: 55px;
   height: 55px;
@@ -620,4 +620,29 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.journey {
+  padding: 80px 0;
+  background-color: #f0efed;
+}
+.journey .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.journeyImage {
+  -ms-flex-preferred-size: calc(25% - 40px);
+      flex-basis: calc(25% - 40px);
+}
+.journeyImage img {
+  -webkit-box-shadow: #f6a823 15px 15px;
+          box-shadow: #f6a823 15px 15px;
+}
+
+.journeyText {
+  -ms-flex-preferred-size: calc(75% - 60px);
+      flex-basis: calc(75% - 60px);
+  margin-left: 60px;
 }
