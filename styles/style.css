@@ -407,6 +407,10 @@ nav a:active {
   border-bottom: 2px solid #f0efed;
 }
 
+.currentPage {
+  color: white;
+}
+
 .mobileNav {
   position: absolute;
   right: -2000px;
@@ -506,6 +510,24 @@ nav a:active {
 }
 
 /************* HOME PAGE HEADER ENDS*************/
+/************* BLOG PAGE HEADER STARTS*************/
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40vh;
+}
+.blogHeader .wrapper {
+  min-height: 40vh;
+  position: relative;
+}
+.blogHeader .wrapper h1 {
+  position: absolute;
+  bottom: -45px;
+}
+
+/************* BLOG PAGE HEADER ENDS*************/
 .about {
   padding: 100px 0 120px;
   background-color: #f0efed;
