@@ -10,16 +10,17 @@ body{
 button {
     color: $black;
     background-color: $accent;
-    padding: 20px 20px;
+    padding: 10px 30px;
     min-width: 100%;
     border: 2px solid $accent;
     font-size: 1rem;
     font-weight: 700;
+    text-transform: uppercase;
     line-height: 1.45rem;
     letter-spacing: 0.05rem;
     text-align: center;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
 
     &:hover {
         background-color: transparent;

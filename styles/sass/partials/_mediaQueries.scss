@@ -7,13 +7,13 @@
 }
 
 .mobileNav {
-    right: 0;
+    position: revert;
 }
 
 /********** NAV MEDIA QUERIES END **********/
 
 /********** HEADER MEDIA QUERIES START **********/
-header {
+.homeHeader {
     background: linear-gradient(180deg, $orangeYellow 75vh, $whiteShade 25vh);
 }
 
@@ -23,7 +23,6 @@ header {
 }
 
 .headerContent {
-    margin: 15% 0 0;
     .headerText {
         h2 {
             font-size: 14vw;

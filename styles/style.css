@@ -312,17 +312,18 @@ body {
 button {
   color: #2c2c2c;
   background-color: #05afc1;
-  padding: 20px 20px;
+  padding: 10px 30px;
   min-width: 100%;
   border: 2px solid #05afc1;
   font-size: 1rem;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.45rem;
   letter-spacing: 0.05rem;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 button:hover {
   background-color: transparent;
@@ -369,7 +370,7 @@ img {
 }
 
 nav {
-  padding: 20px 0 0;
+  padding: 20px 0;
   background-color: #f6a823;
   position: relative;
 }
@@ -398,6 +399,10 @@ nav a:hover {
   border-bottom: 2px solid #f0efed;
 }
 nav a:focus {
+  color: #f0efed;
+  border-bottom: 2px solid #f0efed;
+}
+nav a:active {
   color: #f0efed;
   border-bottom: 2px solid #f0efed;
 }
@@ -439,7 +444,8 @@ nav a:focus {
           filter: brightness(0) invert(1);
 }
 
-header {
+/************* HOME PAGE HEADER STARTS*************/
+.homeHeader {
   background-color: #f6a823;
   height: 82vh;
   -webkit-box-pack: center;
@@ -499,6 +505,7 @@ header {
           box-shadow: white 15px 15px;
 }
 
+/************* HOME PAGE HEADER ENDS*************/
 .about {
   padding: 100px 0 120px;
   background-color: #f0efed;
@@ -730,12 +737,12 @@ footer p {
   }
 
   .mobileNav {
-    right: 0;
+    position: revert;
   }
 
   /********** NAV MEDIA QUERIES END **********/
   /********** HEADER MEDIA QUERIES START **********/
-  header {
+  .homeHeader {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(75vh, #f6a823), color-stop(25vh, #f0efed));
     background: linear-gradient(180deg, #f6a823 75vh, #f0efed 25vh);
   }
@@ -750,9 +757,6 @@ footer p {
             justify-content: center;
   }
 
-  .headerContent {
-    margin: 15% 0 0;
-  }
   .headerContent .headerText h2 {
     font-size: 14vw;
   }

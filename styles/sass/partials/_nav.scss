@@ -1,5 +1,5 @@
 nav {
-    padding: 20px 0 0;
+    padding: 20px 0;
     background-color: $orangeYellow;
     position: relative;
 
@@ -27,6 +27,10 @@ nav {
         }
 
         &:focus {
+            color: $whiteShade;
+            border-bottom: 2px solid $whiteShade;
+        }
+        &:active {
             color: $whiteShade;
             border-bottom: 2px solid $whiteShade;
         }
