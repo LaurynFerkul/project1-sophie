@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* SITE FONTS */
 /* SITE COLOURS */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap");
@@ -268,6 +269,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 p {
@@ -366,11 +368,16 @@ a.moreButton:focus {
 
 img {
   max-width: 100%;
+  min-width: 100%;
   display: block;
 }
 
+br {
+  margin-bottom: 15px;
+}
+
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #f6a823;
   position: relative;
 }
@@ -738,6 +745,99 @@ nav a:active {
   -ms-flex-preferred-size: calc(33.3333333333% - 20px);
       flex-basis: calc(33.3333333333% - 20px);
   margin: 0 10px;
+}
+
+.blogContent {
+  padding: 100px 0;
+  background-color: #f0efed;
+}
+.blogContent a {
+  display: inline;
+  text-transform: capitalize;
+  color: #285e64;
+  font-weight: 700;
+  font-style: italic;
+}
+.blogContent a:hover {
+  color: #f6a823;
+}
+.blogContent a:focus {
+  color: #f6a823;
+}
+.blogContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sideContent {
+  -ms-flex-preferred-size: calc(30% - 30px);
+      flex-basis: calc(30% - 30px);
+  margin-right: 40px;
+}
+
+.mainBlogContent {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.profile {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.profile a {
+  font-style: normal;
+}
+
+.recentPost {
+  background-color: white;
+  padding: 30px;
+}
+.recentPost ul {
+  margin: 0 10px;
+}
+.recentPost ul li {
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+.recentPost ul li::before {
+  content: "•";
+  color: #f6a823;
+  margin: 0 10px 10px 0;
+}
+
+.blogPost {
+  background-color: white;
+  padding: 30px;
+  border-bottom: 5px solid #f6a823;
+  margin-bottom: 40px;
+}
+.blogPost p:first-of-type {
+  font-style: italic;
+}
+
+.comment {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.comment:nth-child(2) {
+  border-bottom: 5px solid #f6a823;
+}
+
+.userImage {
+  -ms-flex-preferred-size: calc(15% - 20px);
+      flex-basis: calc(15% - 20px);
+  margin-right: 20px;
+}
+
+.commentText {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
 }
 
 footer {
