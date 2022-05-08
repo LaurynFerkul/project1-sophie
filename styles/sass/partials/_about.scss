@@ -98,15 +98,14 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -15px;
+    top: -10px;
     img {
         width: 40%;
     }
 }
 
 .backgroundImage {
-    min-height: 370px;
-    max-height: 400px;
+    min-height: 45vh;
     background-image: url("../assets/home-image-4.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +136,7 @@
 .gallery{
     display: flex;
     justify-content: center;
-    padding: 80px;
+    padding: 80px 0;
     ul{
         display: flex;
         li {

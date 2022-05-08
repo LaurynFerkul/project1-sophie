@@ -299,6 +299,10 @@ a {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -367,6 +371,7 @@ img {
 nav {
   padding: 20px 0 0;
   background-color: #f6a823;
+  position: relative;
 }
 nav ul {
   display: -webkit-box;
@@ -385,8 +390,8 @@ nav a {
   margin: 0 10px;
   padding: 10px;
   border: 2px solid transparent;
-  -webkit-transition: 0.7s ease;
-  transition: 0.7s ease;
+  -webkit-transition: color 0.7s ease, border-bottom 0.7s ease;
+  transition: color 0.7s ease, border-bottom 0.7s ease;
 }
 nav a:hover {
   color: #f0efed;
@@ -395,6 +400,43 @@ nav a:hover {
 nav a:focus {
   color: #f0efed;
   border-bottom: 2px solid #f0efed;
+}
+
+.mobileNav {
+  position: absolute;
+  right: -2000px;
+  width: 100vw;
+  overflow: hidden;
+  background: #f6a823;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mobileNav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.mobileNav button {
+  min-width: 1.5rem;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.mobileNav button img:hover {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+.mobileNav button img:focus {
+  color: #f0efed;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 
 header {
@@ -432,6 +474,9 @@ header {
   position: absolute;
   top: -40px;
   left: -40px;
+}
+.headerContent .headerTextImage img {
+  max-width: 22vw;
 }
 .headerContent .headerText {
   margin: auto 0;
@@ -607,15 +652,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: -15px;
+  top: -10px;
 }
 .icon img {
   width: 40%;
 }
 
 .backgroundImage {
-  min-height: 370px;
-  max-height: 400px;
+  min-height: 45vh;
   background-image: url("../assets/home-image-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -654,7 +698,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 80px;
+  padding: 80px 0;
 }
 .gallery ul {
   display: -webkit-box;
@@ -675,4 +719,206 @@ footer p {
   color: white;
   margin: 0;
   padding: 10px 0;
+}
+
+/* TABLET MEDIA QUERIES */
+@media (max-width: 940px) {
+  /********** NAV MEDIA QUERIES START **********/
+  .desktopNav {
+    position: absolute;
+    left: -2000px;
+  }
+
+  .mobileNav {
+    right: 0;
+  }
+
+  /********** NAV MEDIA QUERIES END **********/
+  /********** HEADER MEDIA QUERIES START **********/
+  header {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(75vh, #f6a823), color-stop(25vh, #f0efed));
+    background: linear-gradient(180deg, #f6a823 75vh, #f0efed 25vh);
+  }
+
+  .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .headerContent {
+    margin: 15% 0 0;
+  }
+  .headerContent .headerText h2 {
+    font-size: 14vw;
+  }
+
+  .headerImage {
+    max-width: 45%;
+  }
+  .headerImage img {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  /********** HEADER MEDIA QUERIES END **********/
+  /********** FACTS SECTION MEDIA QUERIES START **********/
+  .favThings,
+.travel {
+    background: none;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .favThingsContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .favThingsText,
+.travelText {
+    margin: 0;
+  }
+  .favThingsText h3,
+.travelText h3 {
+    margin-top: 30px;
+  }
+
+  .favThingsImage {
+    margin-bottom: 20px;
+    -webkit-box-shadow: #a82706 10px 10px;
+            box-shadow: #a82706 10px 10px;
+  }
+  .favThingsImage img {
+    min-width: 100%;
+  }
+
+  .travelContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .travelText {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .travelImage {
+    margin-bottom: 20px;
+    -webkit-box-shadow: #f6a823 -10px 10px;
+            box-shadow: #f6a823 -10px 10px;
+  }
+  .travelImage img {
+    min-width: 100%;
+  }
+
+  /********** FACTS SECTION MEDIA QUERIES END **********/
+  .categories ul li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  /********** JOURNEY MEDIA QUERIES START **********/
+  .journey {
+    padding: 50px 0;
+  }
+  .journey .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .journeyText {
+    margin: 40px 0 0;
+  }
+  .journeyText h3 {
+    text-align: center;
+  }
+}
+/* MOBILE MEDIA QUERIES */
+@media (max-width: 670px) {
+  /********** BASE MEDIA QUERIES START **********/
+  a.moreButton {
+    min-width: 100%;
+  }
+
+  /********** BASE MEDIA QUERIES END **********/
+  /********** HEADER MEDIA QUERIES START **********/
+  .headerContent .headerTextImage {
+    top: -28px;
+    left: -30px;
+  }
+
+  .headerImage {
+    max-width: 70%;
+  }
+
+  /********** HEADER MEDIA QUERIES END **********/
+  /********** ABOUT MEDIA QUERIES START **********/
+  .about .wrapper h3 {
+    text-align: center;
+  }
+  .about .wrapper p {
+    min-width: 100%;
+  }
+
+  /********** ABOUT MEDIA QUERIES END **********/
+  /********** CATEGORIES MEDIA QUERIES START **********/
+  .categories {
+    padding: 50px 0;
+  }
+  .categories ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+
+  .categoriesImage {
+    margin: 0;
+  }
+  .categoriesImage .icon {
+    position: revert;
+    margin: 10px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+
+  .categoriesText h3 {
+    text-align: center;
+  }
+
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery ul li {
+    margin: 10px 0;
+  }
 }

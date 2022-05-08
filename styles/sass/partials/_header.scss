@@ -20,6 +20,9 @@ header{
         position: absolute;
         top: -40px;
         left: -40px;
+        img {
+            max-width: 22vw;
+        }
     }
     .headerText{
         margin: auto 0;
