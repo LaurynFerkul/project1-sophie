@@ -1,0 +1,29 @@
+form{
+    .inputKeys{
+        display: flex;
+    }
+    input, textarea{
+        font-size: 1rem;
+        font-family: $bodyFont;
+        color: $black;
+        line-height: 1.6rem;
+        padding: 20px 30px;
+        border: none;
+        &::placeholder {
+            font-style: italic;
+            color: grey;
+        }
+    }
+    input {
+        flex-basis: calc(50%);
+    
+        &:first-of-type {
+            margin-right: 10px;
+        }
+    }
+    textarea {
+        margin: 20px 0;
+        min-width: 100%;
+        resize: none;
+    }
+}

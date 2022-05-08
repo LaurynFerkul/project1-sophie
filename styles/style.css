@@ -840,6 +840,52 @@ nav a:active {
       flex-basis: 85%;
 }
 
+form .inputKeys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+form input, form textarea {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  line-height: 1.6rem;
+  padding: 20px 30px;
+  border: none;
+}
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-style: italic;
+  color: grey;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  font-style: italic;
+  color: grey;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-style: italic;
+  color: grey;
+}
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-style: italic;
+  color: grey;
+}
+form input::placeholder, form textarea::placeholder {
+  font-style: italic;
+  color: grey;
+}
+form input {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+form input:first-of-type {
+  margin-right: 10px;
+}
+form textarea {
+  margin: 20px 0;
+  min-width: 100%;
+  resize: none;
+}
+
 footer {
   background-color: black;
 }
@@ -921,9 +967,6 @@ footer p {
     -webkit-box-shadow: #a82706 10px 10px;
             box-shadow: #a82706 10px 10px;
   }
-  .favThingsImage img {
-    min-width: 100%;
-  }
 
   .travelContent {
     -webkit-box-orient: vertical;
@@ -943,9 +986,6 @@ footer p {
     margin-bottom: 20px;
     -webkit-box-shadow: #f6a823 -10px 10px;
             box-shadow: #f6a823 -10px 10px;
-  }
-  .travelImage img {
-    min-width: 100%;
   }
 
   /********** FACTS SECTION MEDIA QUERIES END **********/
