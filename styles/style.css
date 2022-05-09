@@ -522,24 +522,31 @@ br {
 }
 
 /************* HOME PAGE HEADER ENDS*************/
-/************* BLOG PAGE HEADER STARTS*************/
-.blogHeader {
-  background-image: url("../assets/blog-image-1.jpg");
+/************* BLOG & CONTACT PAGE HEADER STARTS*************/
+.blogHeader, .contactHeader {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 40vh;
 }
-.blogHeader .wrapper {
+.blogHeader .wrapper, .contactHeader .wrapper {
   min-height: 40vh;
   position: relative;
 }
-.blogHeader .wrapper h1 {
+.blogHeader .wrapper h1, .contactHeader .wrapper h1 {
   position: absolute;
   bottom: -45px;
 }
 
-/************* BLOG PAGE HEADER ENDS*************/
+.blogHeader {
+  background-image: url("../assets/blog-image-1.jpg");
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-image-1.jpg");
+}
+
+/************* BLOG & CONTACT PAGE HEADER ENDS*************/
 .about {
   padding: 100px 0 120px;
   background-color: #f0efed;
@@ -850,6 +857,7 @@ form .inputKeys {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
 }
 form input, form textarea {
   font-size: 1rem;
@@ -890,6 +898,52 @@ form textarea {
   margin: 20px 0;
   min-width: 100%;
   resize: none;
+}
+
+.contactContent {
+  background-color: #f0efed;
+  padding: 100px 0;
+}
+.contactContent .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactInfo {
+  background: white;
+  padding: 30px;
+  -ms-flex-preferred-size: calc(30% - 40px);
+      flex-basis: calc(30% - 40px);
+  margin-right: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactInfo ul li {
+  min-height: 30px;
+  min-width: 30px;
+  margin-right: 10%;
+}
+.contactInfo ul li img {
+  max-height: 30px;
+}
+
+.contactInfo h4 {
+  text-transform: lowercase;
+}
+.contactInfo span {
+  display: block;
+}
+
+.contactForm {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 
 footer {

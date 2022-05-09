@@ -1,6 +1,7 @@
 form{
     .inputKeys{
         display: flex;
+        min-width: 100%;
     }
     input, textarea{
         font-size: 1rem;
@@ -16,7 +17,6 @@ form{
     }
     input {
         flex-basis: calc(50%);
-    
         &:first-of-type {
             margin-right: 10px;
         }

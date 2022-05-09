@@ -46,9 +46,8 @@
 }
 /************* HOME PAGE HEADER ENDS*************/
 
-/************* BLOG PAGE HEADER STARTS*************/
-.blogHeader{
-    background-image: url("../assets/blog-image-1.jpg");
+/************* BLOG & CONTACT PAGE HEADER STARTS*************/
+.blogHeader, .contactHeader{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,4 +61,12 @@
         }
     }
 }
-/************* BLOG PAGE HEADER ENDS*************/
+.blogHeader{
+    background-image: url("../assets/blog-image-1.jpg");
+}
+.contactHeader {
+    background-image: url("../assets/contact-image-1.jpg");
+}
+
+/************* BLOG & CONTACT PAGE HEADER ENDS*************/
+
