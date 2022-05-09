@@ -415,7 +415,7 @@ br {
 
 .mobileNav {
   position: absolute;
-  right: -2000px;
+  right: -10000px;
   width: 100vw;
   overflow: hidden;
   background: #f6a823;
