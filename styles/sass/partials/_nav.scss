@@ -1,4 +1,4 @@
-nav {
+.desktopNav {
     padding: 10px 0;
     background-color: $orangeYellow;
     position: relative;
@@ -19,22 +19,14 @@ nav {
         margin: 0 10px;
         padding: 10px ;
         border: 2px solid transparent;
-        transition: color .7s ease, border-bottom .7s ease ;
-
+        transition: color .7s ease;
         &:hover {
             color: $whiteShade;
-            border-bottom: 2px solid $whiteShade;
         }
 
         &:focus {
             color: $whiteShade;
-            border-bottom: 2px solid $whiteShade;
         }
-        &:active {
-            color: $whiteShade;
-            border-bottom: 2px solid $whiteShade;
-        }
-
     }
 }
 
@@ -49,16 +41,28 @@ nav {
     overflow: hidden;
     background: $orangeYellow;
     display: flex;
+    padding: 10px 0;
     .wrapper {
         display: flex;
-        justify-content: flex-end;
+    }
+    h1{
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        transition: color .7s ease;
+        margin-left: 30px;
+        &:hover {
+            color: $whiteShade;
+        } 
+        &:focus {
+            color: $whiteShade;
+        }
     }
     button{
         min-width: 1.5rem;
         background-color: transparent;
         padding: 0;
         border: none;
-        justify-content: flex-end;
+        align-self: flex-end;
         img{
             &:hover {
                 filter: brightness(0) invert(1);
@@ -70,4 +74,5 @@ nav {
             }
         }
     } 
+
 }

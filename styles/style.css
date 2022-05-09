@@ -291,6 +291,7 @@ ul {
 }
 
 a {
+  font-size: 1rem;
   line-height: 1.45rem;
   text-decoration: none;
   color: inherit;
@@ -301,7 +302,7 @@ a {
   margin: 0;
 }
 
-body {
+HTML {
   overflow-x: hidden;
 }
 
@@ -376,12 +377,12 @@ br {
   margin-bottom: 15px;
 }
 
-nav {
+.desktopNav {
   padding: 10px 0;
   background-color: #f6a823;
   position: relative;
 }
-nav ul {
+.desktopNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,29 +390,23 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-nav h1 {
+.desktopNav h1 {
   font-size: 2.1rem;
   line-height: inherit;
   margin: 0 15px;
 }
-nav a {
+.desktopNav a {
   margin: 0 10px;
   padding: 10px;
   border: 2px solid transparent;
-  -webkit-transition: color 0.7s ease, border-bottom 0.7s ease;
-  transition: color 0.7s ease, border-bottom 0.7s ease;
+  -webkit-transition: color 0.7s ease;
+  transition: color 0.7s ease;
 }
-nav a:hover {
+.desktopNav a:hover {
   color: #f0efed;
-  border-bottom: 2px solid #f0efed;
 }
-nav a:focus {
+.desktopNav a:focus {
   color: #f0efed;
-  border-bottom: 2px solid #f0efed;
-}
-nav a:active {
-  color: #f0efed;
-  border-bottom: 2px solid #f0efed;
 }
 
 .currentPage {
@@ -427,23 +422,33 @@ nav a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px 0;
 }
 .mobileNav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+}
+.mobileNav h1 {
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+  -webkit-transition: color 0.7s ease;
+  transition: color 0.7s ease;
+  margin-left: 30px;
+}
+.mobileNav h1:hover {
+  color: #f0efed;
+}
+.mobileNav h1:focus {
+  color: #f0efed;
 }
 .mobileNav button {
   min-width: 1.5rem;
   background-color: transparent;
   padding: 0;
   border: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .mobileNav button img:hover {
   -webkit-filter: brightness(0) invert(1);
@@ -691,7 +696,8 @@ nav a:active {
   top: -10px;
 }
 .icon img {
-  width: 40%;
+  min-width: 50%;
+  max-width: 50%;
 }
 
 .backgroundImage {
@@ -1014,6 +1020,42 @@ footer p {
   .journeyText h3 {
     text-align: center;
   }
+
+  /******************** BLOG PAGE MEDIA QUERIES START ********************/
+  /********** BLOG PAGE MEDIA QUERIES START **********/
+  .blogContent .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blogContent .wrapper h4 {
+    margin: 0 0 10px;
+  }
+
+  .sideContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 0 0;
+  }
+
+  .profile {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10px 0 0;
+  }
+  .profile .profileText {
+    margin-left: 20px;
+  }
+
+  .recentPost {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 /* MOBILE MEDIA QUERIES */
 @media (max-width: 670px) {
@@ -1086,5 +1128,40 @@ footer p {
   }
   .gallery ul li {
     margin: 10px 0;
+  }
+
+  /******************** BLOG PAGE MEDIA QUERIES START ********************/
+  /********** BLOG PAGE MEDIA QUERIES START **********/
+  .blogPost h3, .blogPost p:first-of-type {
+    text-align: center;
+  }
+
+  .sideContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+
+  .profile {
+    margin: 40px 0 20px;
+  }
+
+  /********** FORM MEDIA QUERIES START **********/
+  .inputKeys {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  form input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  form input:first-of-type {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }

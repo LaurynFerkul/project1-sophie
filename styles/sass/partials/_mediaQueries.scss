@@ -102,6 +102,35 @@
         text-align: center;
     }
 }
+
+/******************** BLOG PAGE MEDIA QUERIES START ********************/
+/********** BLOG PAGE MEDIA QUERIES START **********/
+.blogContent {
+    .wrapper{
+        flex-direction: column-reverse;
+            h4 {
+                margin: 0 0 10px;
+            }
+    }
+}
+
+.sideContent{
+    display: flex;
+    margin:20px 0 0 0;
+}
+
+.profile{
+    flex-basis: calc(50%);
+    display: flex;
+    margin: 0 10px 0 0;
+    .profileText{
+        margin-left: 20px;
+    }
+}
+
+.recentPost{
+    flex-basis: 50%;
+}
 }
 
 
@@ -179,5 +208,35 @@
             }
         }
     }
+
+/******************** BLOG PAGE MEDIA QUERIES START ********************/
+/********** BLOG PAGE MEDIA QUERIES START **********/
+    .blogPost{
+        h3, p:first-of-type{
+            text-align: center;
+        }
+    }
+    .sideContent {
+        flex-direction: column;
+        margin: 0;
+    }
+    .profile{
+        margin: 40px 0 20px;
+    }
+
+/********** FORM MEDIA QUERIES START **********/
+.inputKeys {
+    flex-direction: column;
+}
+
+form{
+    input {
+        flex-basis: 100%;
+        &:first-of-type {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
 
 }
