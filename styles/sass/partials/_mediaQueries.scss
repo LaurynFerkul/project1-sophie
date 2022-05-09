@@ -131,6 +131,15 @@
 .recentPost{
     flex-basis: 50%;
 }
+
+/********** CONTACT PAGE MEDIA QUERIES START **********/
+.contactContent .wrapper{
+    flex-direction: column-reverse;
+}
+
+.contactInfo{
+    margin: 30px 0;
+}
 }
 
 
@@ -238,5 +247,4 @@ form{
         }
     }
 }
-
 }
