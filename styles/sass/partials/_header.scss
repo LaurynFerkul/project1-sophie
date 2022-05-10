@@ -1,22 +1,32 @@
 /************* HOME PAGE HEADER STARTS*************/
+// .homeHeader{
+//     background-color: $orangeYellow;
+//     height: 82vh;
+//     justify-content: center;
+// }
+
 .homeHeader{
     background-color: $orangeYellow;
-    height: 82vh;
+    min-height: 75vh;
     justify-content: center;
+    padding-top: 40px;
+    background: linear-gradient(180deg, $orangeYellow 95%, $whiteShade 95%);
+    display: flex;
 }
 
 .headerContainer {
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: space-between;
+    // min-height: 100%;
 }
 
 .headerContent {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     margin-right: 30px;
+
     .headerTextImage{
         position: absolute;
         top: -40px;
@@ -36,11 +46,10 @@
 
 .headerImage {
 
-    height: 100%;
-    display: inherit;
+    min-height: 100%;
+    display: flex;
         img {
         object-fit: cover;
-        transform: translateY(10%);
         box-shadow: white 15px 15px;
     }
 }
@@ -52,15 +61,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
+    display: flex;
     .wrapper{
-        min-height: 40vh;
+        min-height: 100%;
         position: relative;
-        h1{
-            position: absolute;
-            bottom: -45px;
-        }
+    }
+    h2 {
+        font-family: $headingFont;
+        font-size: 4rem;
+        line-height: 4.6rem;
+        margin: 0;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -45px;
     }
 }
+
 .blogHeader{
     background-image: url("../assets/blog-image-1.jpg");
 }
