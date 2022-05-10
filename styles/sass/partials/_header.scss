@@ -1,3 +1,4 @@
+/******* HOME PAGE HEADER STYLES START *******/
 .homeHeader{
     background-color: $orangeYellow;
     min-height: 75vh;
@@ -46,7 +47,9 @@
         box-shadow: white 15px 15px;
     }
 }
+/******* HOME PAGE HEADER STYLES END *******/
 
+/******* BLOG & CONTACT PAGE HEADER STYLES START *******/
 .blogHeader, .contactHeader{
     background-position: center;
     background-repeat: no-repeat;
@@ -74,5 +77,6 @@
 .contactHeader {
     background-image: url("../assets/contact-image-1.jpg");
 }
+/******* BLOG & CONTACT PAGE HEADER STYLES END *******/
 
 

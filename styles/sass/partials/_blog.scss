@@ -1,3 +1,4 @@
+/******* BLOG PAGE STYLES START *******/
 .blogContent {
     padding: 100px 0;
     background-color: $whiteShade;
@@ -20,6 +21,7 @@
     }
 }
 
+/******* SIDE CONTENT STYLES START *******/
 .sideContent{
     flex-basis: calc(30% - 30px);
     margin-right: 40px;
@@ -55,7 +57,9 @@
        } 
      }
 }
+/******* SIDE CONTENT STYLES END *******/
 
+/******* BLOG POST STYLES START *******/
 .blogPost{
     background-color: white;
     padding: 30px;
@@ -65,7 +69,9 @@
         font-style: italic;
     }
 }
+/******* BLOG POST STYLES END *******/
 
+/******* COMMENT SECTION STYLES START *******/
 .comment {
     background-color: white;
     padding: 30px;
@@ -84,3 +90,5 @@
 .commentText {
     flex-basis: calc(85%);
 }
+/******* COMMENT SECTION STYLES END *******/
+/******* BLOG PAGE STYLES END *******/

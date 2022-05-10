@@ -1,3 +1,5 @@
+/******* HOME PAGE STYLES START *******/
+/******* ABOUT SECTION STYLES START *******/
 .about{
     padding: 40px 0 120px;
     background-color: $whiteShade;
@@ -5,7 +7,9 @@
         max-width: 80%;
     }
 }
+/******* ABOUT SECTION STYLES END*******/
 
+/******* FACT SECTION STYLES START *******/
 .favThings {
     transform: translateY(-5%);
     background: linear-gradient(90deg, $rustRed 51%, transparent 49%);
@@ -62,7 +66,9 @@
         object-fit: cover;
     }
 }
+/******* FACT SECTION STYLES END *******/
 
+/******* CATEGORIES SECTION STYLES START *******/
 .categories {
     background-color: $whiteShade;
     padding: 80px 0;
@@ -111,7 +117,9 @@
         max-width: 50%;
     }
 }
+/******* CATEGORIES SECTION END START *******/
 
+/******* BACKGROUND IMAGE SECTION STYLES START *******/
 .backgroundImage {
     min-height: 45vh;
     background-image: url("../assets/home-image-4.jpg");
@@ -119,7 +127,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/******* BACKGROUND IMAGE SECTION STYLES END *******/
 
+/******* JOURNEY SECTION STYLES START *******/
 .journey {
     padding: 80px 0;
     background-color: $whiteShade;
@@ -139,7 +149,9 @@
     flex-basis: calc(75% - 60px);
     margin-left: 60px;
 }
+/******* JOURNEY SECTION STYLES END *******/
 
+/******* GALLERY SECTION STYLES START *******/
 .gallery{
     display: flex;
     justify-content: center;
@@ -152,3 +164,5 @@
         }
     }
 }
+/******* GALLERY SECTION STYLES END *******/
+/******* HOME PAGE STYLES END *******/

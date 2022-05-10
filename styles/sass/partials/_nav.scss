@@ -1,3 +1,4 @@
+/******* DESKTOP NAV STYLES START *******/
 .desktopNav {
     padding: 10px 0;
     background-color: $orangeYellow;
@@ -26,10 +27,13 @@
     }
 }
 
+// Highlights the current page you are on in the nav
 .currentPage {
     color: white;
 }
+/******* DESKTOP NAV STYLES START *******/
 
+/******* MOBILE NAV STYLES START *******/
 .mobileNav {
     position: absolute;
     right: -10000px;
@@ -71,3 +75,4 @@
         }
     } 
 }
+/******* MOBILE NAV STYLES END *******/

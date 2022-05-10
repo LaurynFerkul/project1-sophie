@@ -296,6 +296,7 @@ a {
   margin: 0;
 }
 
+/******* BASE STYLES START (common styles seen throughout the website)*******/
 HTML {
   overflow-x: hidden;
 }
@@ -371,6 +372,8 @@ br {
   margin-bottom: 15px;
 }
 
+/******* BASE STYLES END *******/
+/******* DESKTOP NAV STYLES START *******/
 .desktopNav {
   padding: 10px 0;
   background-color: #f6a823;
@@ -407,6 +410,8 @@ br {
   color: white;
 }
 
+/******* DESKTOP NAV STYLES START *******/
+/******* MOBILE NAV STYLES START *******/
 .mobileNav {
   position: absolute;
   right: -10000px;
@@ -454,6 +459,8 @@ br {
           filter: brightness(0) invert(1);
 }
 
+/******* MOBILE NAV STYLES END *******/
+/******* HOME PAGE HEADER STYLES START *******/
 .homeHeader {
   background-color: #f6a823;
   min-height: 75vh;
@@ -519,6 +526,8 @@ br {
           box-shadow: white 15px 15px;
 }
 
+/******* HOME PAGE HEADER STYLES END *******/
+/******* BLOG & CONTACT PAGE HEADER STYLES START *******/
 .blogHeader, .contactHeader {
   background-position: center;
   background-repeat: no-repeat;
@@ -550,6 +559,9 @@ br {
   background-image: url("../assets/contact-image-1.jpg");
 }
 
+/******* BLOG & CONTACT PAGE HEADER STYLES END *******/
+/******* HOME PAGE STYLES START *******/
+/******* ABOUT SECTION STYLES START *******/
 .about {
   padding: 40px 0 120px;
   background-color: #f0efed;
@@ -558,6 +570,8 @@ br {
   max-width: 80%;
 }
 
+/******* ABOUT SECTION STYLES END*******/
+/******* FACT SECTION STYLES START *******/
 .favThings {
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
@@ -656,6 +670,8 @@ br {
      object-fit: cover;
 }
 
+/******* FACT SECTION STYLES END *******/
+/******* CATEGORIES SECTION STYLES START *******/
 .categories {
   background-color: #f0efed;
   padding: 80px 0;
@@ -724,6 +740,8 @@ br {
   max-width: 50%;
 }
 
+/******* CATEGORIES SECTION END START *******/
+/******* BACKGROUND IMAGE SECTION STYLES START *******/
 .backgroundImage {
   min-height: 45vh;
   background-image: url("../assets/home-image-4.jpg");
@@ -732,6 +750,8 @@ br {
   background-size: cover;
 }
 
+/******* BACKGROUND IMAGE SECTION STYLES END *******/
+/******* JOURNEY SECTION STYLES START *******/
 .journey {
   padding: 80px 0;
   background-color: #f0efed;
@@ -757,6 +777,8 @@ br {
   margin-left: 60px;
 }
 
+/******* JOURNEY SECTION STYLES END *******/
+/******* GALLERY SECTION STYLES START *******/
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +799,9 @@ br {
   margin: 0 10px;
 }
 
+/******* GALLERY SECTION STYLES END *******/
+/******* HOME PAGE STYLES END *******/
+/******* BLOG PAGE STYLES START *******/
 .blogContent {
   padding: 100px 0;
   background-color: #f0efed;
@@ -800,6 +825,7 @@ br {
   display: flex;
 }
 
+/******* SIDE CONTENT STYLES START *******/
 .sideContent {
   -ms-flex-preferred-size: calc(30% - 30px);
       flex-basis: calc(30% - 30px);
@@ -837,6 +863,8 @@ br {
   margin: 0 10px 10px 0;
 }
 
+/******* SIDE CONTENT STYLES END *******/
+/******* BLOG POST STYLES START *******/
 .blogPost {
   background-color: white;
   padding: 30px;
@@ -847,6 +875,8 @@ br {
   font-style: italic;
 }
 
+/******* BLOG POST STYLES END *******/
+/******* COMMENT SECTION STYLES START *******/
 .comment {
   background-color: white;
   padding: 30px;
@@ -870,6 +900,9 @@ br {
       flex-basis: 85%;
 }
 
+/******* COMMENT SECTION STYLES END *******/
+/******* BLOG PAGE STYLES END *******/
+/******* FORM STYLES START *******/
 form .inputKeys {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,6 +953,8 @@ form textarea {
   resize: none;
 }
 
+/******* FORM STYLES END *******/
+/******* CONTACT PAGE STYLES START *******/
 .contactContent {
   background-color: #f0efed;
   padding: 100px 0;
@@ -975,6 +1010,7 @@ form textarea {
       flex-basis: 70%;
 }
 
+/******* CONTACT PAGE STYLES END *******/
 footer {
   background-color: black;
 }
@@ -985,7 +1021,9 @@ footer p {
   padding: 10px 0;
 }
 
+/*************************** MEDIA QUERY FOR LARGE SCREENS START ***************************/
 @media (min-width: 2800px) {
+  /******* HOME HEADER STYLES START - LARGE SCREENS *******/
   .homeHeader {
     min-height: 25vh;
   }
@@ -996,8 +1034,11 @@ footer p {
   .headerContent .headerText h2 {
     font-size: 5vw;
   }
+
+  /******* HOME HEADER STYLES END - LARGE SCREENS *******/
 }
 @media (min-width: 1200px) and (max-width: 2799px) {
+  /******* HOME HEADER STYLES START - LARGE SCREENS *******/
   .homeHeader {
     min-height: 25vh;
   }
@@ -1005,17 +1046,27 @@ footer p {
   .headerContent .headerText h2 {
     font-size: 8vw;
   }
+
+  /******* HOME HEADER STYLES END - LARGE SCREENS *******/
 }
+/***************************MEDIA QUERY FOR LARGE SCREENS END ***************************/
+/****************** MEDIA QUERY FOR TABLET START ******************/
 @media (max-width: 940px) {
+  /******* DESKTOP NAV STYLES START - TABLET SCREENS *******/
   .desktopNav {
     position: absolute;
     left: -2000px;
   }
 
+  /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
+  /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
   .mobileNav {
     position: revert;
   }
 
+  /******* MOBILE NAV STYLES END - TABLET SCREENS *******/
+  /************** HOME PAGE STYLES START - TABLET SCREENS **************/
+  /******* HEADER STYLES START - TABLET SCREENS *******/
   .headerContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1052,6 +1103,8 @@ footer p {
     font-size: 3rem;
   }
 
+  /******* HEADER STYLES END - TABLET SCREENS *******/
+  /******* FACT SECTION STYLES START - TABLET SCREENS *******/
   .favThings,
 .travel {
     background: none;
@@ -1101,11 +1154,15 @@ footer p {
             box-shadow: #f6a823 -8px 8px;
   }
 
+  /******* FACT SECTION STYLES END - TABLET SCREENS *******/
+  /******* CATEGORIES SECTION STYLES START - TABLET SCREENS *******/
   .categories ul li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
 
+  /******* CATEGORIES SECTION STYLES END - TABLET SCREENS *******/
+  /******* JOURNEY SECTION STYLES START - TABLET SCREENS *******/
   .journey {
     padding: 50px 0;
   }
@@ -1126,6 +1183,10 @@ footer p {
     text-align: center;
   }
 
+  /******* JOURNEY SECTION STYLES END - TABLET SCREENS *******/
+  /************** HOME PAGE STYLES END - TABLET SCREENS **************/
+  /************** BLOG PAGE STYLES START - TABLET SCREENS **************/
+  /******* BLOG SECTION STYLES START - TABLET SCREENS *******/
   .blogContent .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1136,6 +1197,8 @@ footer p {
     margin: 0 0 10px;
   }
 
+  /******* BLOG SECTION STYLES END - TABLET SCREENS *******/
+  /******* SIDE SECTIONS STYLES START - TABLET SCREENS *******/
   .sideContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1160,6 +1223,9 @@ footer p {
         flex-basis: 50%;
   }
 
+  /******* SIDE SECTIONS STYLES END - TABLET SCREENS *******/
+  /************** BLOG PAGE STYLES END - TABLET SCREENS **************/
+  /************** CONTACT PAGE STYLES START - TABLET SCREENS **************/
   .contactContent .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1170,12 +1236,19 @@ footer p {
   .contactInfo {
     margin: 30px 0;
   }
+
+  /************** CONTACT PAGE STYLES END - TABLET SCREENS **************/
 }
+/*************************** MEDIA QUERY FOR TABLET ENDS ***************************/
+/*************************** MEDIA QUERY FOR MOBILE STARTS ***************************/
 @media (max-width: 600px) {
+  /******* BASE STYLES START - MOBILE SCREENS *******/
   a.moreButton {
     min-width: 100%;
   }
 
+  /******* BASE STYLES END- MOBILE SCREENS *******/
+  /******* HEADER STYLES START - MOBILE SCREENS *******/
   .homeHeader {
     min-height: 56vh;
   }
@@ -1190,6 +1263,9 @@ footer p {
     font-size: 2rem;
   }
 
+  /******* HEADER STYLES END - MOBILE SCREENS *******/
+  /************** HOME PAGE STYLES START - MOBILE SCREENS **************/
+  /******* ABOUT SECTION STYLES START - MOBILE SCREENS *******/
   .about .wrapper h3 {
     text-align: center;
   }
@@ -1197,6 +1273,8 @@ footer p {
     min-width: 100%;
   }
 
+  /******* ABOUT SECTION STYLES END - MOBILE SCREENS *******/
+  /******* CATEGORIES SECTION STYLES START - MOBILE SCREENS *******/
   .categories {
     padding: 50px 0;
   }
@@ -1227,6 +1305,8 @@ footer p {
         align-self: center;
   }
 
+  /******* CATEGORIES SECTION STYLES END - MOBILE SCREENS *******/
+  /******* GALLERY SECTION STYLES START - MOBILE SCREENS *******/
   .gallery {
     padding: 50px 0;
   }
@@ -1243,10 +1323,16 @@ footer p {
     margin: 10px 0;
   }
 
+  /******* GALLERY SECTION STYLES END - MOBILE SCREENS *******/
+  /************** HOME PAGE STYLES END - MOBILE SCREENS **************/
+  /************** BLOG PAGE STYLES START - MOBILE SCREENS **************/
+  /******* BLOG SECTION STYLES START - MOBILE SCREENS *******/
   .blogPost h3, .blogPost p:first-of-type {
     text-align: center;
   }
 
+  /******* BLOG SECTION STYLES END - MOBILE SCREENS *******/
+  /******* SIDE SECTION STYLES START - MOBILE SCREENS *******/
   .sideContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1259,6 +1345,9 @@ footer p {
     margin: 40px 0 20px;
   }
 
+  /******* SIDE SECTION STYLES END - MOBILE SCREENS *******/
+  /************** BLOG PAGE STYLES END - MOBILE SCREENS **************/
+  /******* FORM STYLES START - MOBILE SCREENS *******/
   .inputKeys {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1274,4 +1363,7 @@ footer p {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+  /******* FORM STYLES END - MOBILE SCREENS *******/
 }
+/*************************** MEDIA QUERY FOR MOBILE ENDS ***************************/

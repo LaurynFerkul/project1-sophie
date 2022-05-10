@@ -1,4 +1,6 @@
+/*************************** MEDIA QUERY FOR LARGE SCREENS START ***************************/
 @media (min-width: 2800px) {
+    /******* HOME HEADER STYLES START - LARGE SCREENS *******/
     .homeHeader {
         min-height: 25vh;
         h2 {
@@ -8,28 +10,38 @@
     .headerContent .headerText h2 {
         font-size: 5vw;
     }
-
+    /******* HOME HEADER STYLES END - LARGE SCREENS *******/
 }
 
 @media (min-width: 1200px) and (max-width: 2799px){
+    /******* HOME HEADER STYLES START - LARGE SCREENS *******/
     .homeHeader {
         min-height: 25vh;
     }
     .headerContent .headerText h2 {
         font-size: 8vw;
     }
+    /******* HOME HEADER STYLES END - LARGE SCREENS *******/
 }
+/***************************MEDIA QUERY FOR LARGE SCREENS END ***************************/
 
+/****************** MEDIA QUERY FOR TABLET START ******************/
 @media (max-width: 940px) {
+    /******* DESKTOP NAV STYLES START - TABLET SCREENS *******/
     .desktopNav {
         position: absolute;
         left: -2000px;
     }
+    /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
 
+    /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
     .mobileNav {
         position: revert;
     }
+    /******* MOBILE NAV STYLES END - TABLET SCREENS *******/
 
+    /************** HOME PAGE STYLES START - TABLET SCREENS **************/
+    /******* HEADER STYLES START - TABLET SCREENS *******/
     .headerContainer {
         flex-direction: column;
         justify-content: flex-start;
@@ -59,7 +71,9 @@
             font-size: 3rem;
         }
     }
+    /******* HEADER STYLES END - TABLET SCREENS *******/
 
+    /******* FACT SECTION STYLES START - TABLET SCREENS *******/
     .favThings,
     .travel {
         background: none;
@@ -96,13 +110,17 @@
         margin-bottom: 20px;
         box-shadow: $orangeYellow -8px 8px;
     }
+    /******* FACT SECTION STYLES END - TABLET SCREENS *******/
 
+    /******* CATEGORIES SECTION STYLES START - TABLET SCREENS *******/
     .categories {
         ul li {
             flex-basis: calc(100%);
         }
     }
+    /******* CATEGORIES SECTION STYLES END - TABLET SCREENS *******/
 
+    /******* JOURNEY SECTION STYLES START - TABLET SCREENS *******/
     .journey {
         padding: 50px 0;
         .wrapper {
@@ -117,14 +135,20 @@
             text-align: center;
         }
     }
+    /******* JOURNEY SECTION STYLES END - TABLET SCREENS *******/
+    /************** HOME PAGE STYLES END - TABLET SCREENS **************/
 
+    /************** BLOG PAGE STYLES START - TABLET SCREENS **************/
+    /******* BLOG SECTION STYLES START - TABLET SCREENS *******/
     .blogContent .wrapper {
             flex-direction: column-reverse;
             h4 {
                 margin: 0 0 10px;
             }
         }
+    /******* BLOG SECTION STYLES END - TABLET SCREENS *******/
 
+    /******* SIDE SECTIONS STYLES START - TABLET SCREENS *******/
     .sideContent {
         display: flex;
         margin:20px 0 0 0;
@@ -142,7 +166,10 @@
     .recentPost {
         flex-basis: 50%;
     }
+    /******* SIDE SECTIONS STYLES END - TABLET SCREENS *******/
+    /************** BLOG PAGE STYLES END - TABLET SCREENS **************/
 
+    /************** CONTACT PAGE STYLES START - TABLET SCREENS **************/
     .contactContent .wrapper {
         flex-direction: column-reverse;
     }
@@ -150,13 +177,19 @@
     .contactInfo {
         margin: 30px 0;
     }
+    /************** CONTACT PAGE STYLES END - TABLET SCREENS **************/
 }
+/*************************** MEDIA QUERY FOR TABLET ENDS ***************************/
 
+/*************************** MEDIA QUERY FOR MOBILE STARTS ***************************/
 @media (max-width: 600px) {
+    /******* BASE STYLES START - MOBILE SCREENS *******/
     a.moreButton {
         min-width: 100%;
     }
+    /******* BASE STYLES END- MOBILE SCREENS *******/
 
+    /******* HEADER STYLES START - MOBILE SCREENS *******/
     .homeHeader {
         min-height: 56vh;
     }
@@ -169,7 +202,10 @@
     .contactHeader h2 {
         font-size: 2rem
     }
+    /******* HEADER STYLES END - MOBILE SCREENS *******/
 
+    /************** HOME PAGE STYLES START - MOBILE SCREENS **************/
+    /******* ABOUT SECTION STYLES START - MOBILE SCREENS *******/
     .about .wrapper {
         h3 {
             text-align: center;
@@ -178,8 +214,9 @@
             min-width: 100%;
         }
     }
-    
+    /******* ABOUT SECTION STYLES END - MOBILE SCREENS *******/
 
+    /******* CATEGORIES SECTION STYLES START - MOBILE SCREENS *******/
     .categories {
         padding: 50px 0;
         ul li {
@@ -203,7 +240,9 @@
         margin-top: 10px;
         align-self: center;
         }
+    /******* CATEGORIES SECTION STYLES END - MOBILE SCREENS *******/
 
+    /******* GALLERY SECTION STYLES START - MOBILE SCREENS *******/
     .gallery {
         padding: 50px 0;
         ul {
@@ -214,14 +253,19 @@
             }
         }
     }
+    /******* GALLERY SECTION STYLES END - MOBILE SCREENS *******/
+    /************** HOME PAGE STYLES END - MOBILE SCREENS **************/
 
-
+    /************** BLOG PAGE STYLES START - MOBILE SCREENS **************/
+    /******* BLOG SECTION STYLES START - MOBILE SCREENS *******/
     .blogPost {
         h3, p:first-of-type{
             text-align: center;
         }
     }
+    /******* BLOG SECTION STYLES END - MOBILE SCREENS *******/
 
+    /******* SIDE SECTION STYLES START - MOBILE SCREENS *******/
     .sideContent {
         flex-direction: column;
         margin: 0;
@@ -230,7 +274,10 @@
     .profile {
         margin: 40px 0 20px;
     }
+    /******* SIDE SECTION STYLES END - MOBILE SCREENS *******/
+    /************** BLOG PAGE STYLES END - MOBILE SCREENS **************/
     
+    /******* FORM STYLES START - MOBILE SCREENS *******/
     .inputKeys {
         flex-direction: column;
     }
@@ -244,4 +291,6 @@
             }
         }
     }
+    /******* FORM STYLES END - MOBILE SCREENS *******/
 }
+/*************************** MEDIA QUERY FOR MOBILE ENDS ***************************/

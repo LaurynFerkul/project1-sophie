@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <!-- START OF DESKTOP NAV -->
     <nav class="desktopNav">
         <ul class="wrapper">
             <li>
@@ -28,6 +29,9 @@
         </ul>
     
     </nav>
+    <!-- END OF DESKTOP NAV -->
+
+    <!-- START OF MOBILE NAV -->
     <nav class="mobileNav">
         <div class="wrapper">
             <button>
@@ -38,17 +42,22 @@
             </a>
         </div>
     </nav>
+    <!-- END OF MOBILE NAV -->
 
+    <!-- START OF HEADER CONTENT -->
     <header class="blogHeader">
         <div class="wrapper">
             <h2>Blog</h2>
         </div>
     </header>
+    <!-- END OF HEADER CONTENT -->
+
 
     <main class="blogContent">
         <div class="wrapper"> 
-
+            <!-- START OF SIDE CONTENT -->
             <aside class="sideContent">
+                <!-- START OF PROFILE CONTENT -->
                 <section class="profile">
                     <div class="profileImage">
                         <img src="./assets/blog-image-2.jpg" alt="Self portrait of female with slices of oranges over her eyes">
@@ -58,6 +67,9 @@
                         <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="./index.html#about">Find out more.</a></p>
                     </div>
                 </section>
+                <!-- END OF PROFILE CONTENT -->
+
+                <!-- START OF RECENT POST CONTENT -->
                 <section class="recentPost">
                     <h4>Recent Posts</h4>
                     <ul>
@@ -67,11 +79,14 @@
                         <li>Scelerisque nec pharetra id</li>
                     </ul>
                 </section>
+                <!-- END OF RECENT POST CONTENT -->
             </aside>
+            <!-- END OF SIDE CONTENT -->
 
             
             <section class="mainBlogContent">
-                <section class="blogPost">
+                <!-- START OF BLOG POST -->
+                <article class="blogPost">
                     <h3>Why I became a blogger</h3>
                     <p>Monday October 8th, 2018 by <a href="./index.html#about">Sophie Barlow</a></p>
                     <p> Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.
@@ -85,8 +100,10 @@
                     In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.
                     <br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
-                </section>
+                </article>
+                    <!-- END OF BLOG POST -->
 
+                <!-- START OF COMMENT SECTION -->
                 <section class="commentSection">
                     <div class="comment">
                         <div class="userImage">
@@ -107,7 +124,9 @@
                         </div>
                     </div>
                 </section>
+                <!-- END OF COMMENT SECTION -->
 
+                <!-- START OF FORM TO POST COMMENT -->
                 <form action="#" method="POST" class="form" name="form">
                     <div class="inputKeys">
                         <label for="name" class="sr-only">Name</label>
@@ -121,12 +140,15 @@
 
                     <button>Post Comment</button>
                 </form>
+                <!-- END OF FORM TO POST COMMENT -->
             </section>
         </div>
     </main>
 
+    <!-- START OF FOOTER -->
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <!-- END OF FOOTER -->
 </body>
 </html>
