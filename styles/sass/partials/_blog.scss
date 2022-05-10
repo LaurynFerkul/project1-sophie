@@ -15,7 +15,7 @@
             color: $orangeYellow;
         }
     }
-    .wrapper{
+    .wrapper {
         display: flex;
     }
 }
@@ -54,7 +54,6 @@
            margin: 0 10px 10px 0;
        } 
      }
-   
 }
 
 .blogPost{
@@ -76,7 +75,8 @@
         border-bottom: 5px solid $orangeYellow;
     }
 }
-.userImage{
+
+.userImage {
     flex-basis: calc(15% - 20px);
     margin-right: 20px
 }

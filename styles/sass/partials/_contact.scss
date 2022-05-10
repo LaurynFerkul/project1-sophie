@@ -15,20 +15,26 @@
     ul{
         display: flex;
         li{
-            min-height: 30px;
-            min-width: 30px;
             margin-right: 10%;
+            a{
+                min-height: 30px;
+                min-width: 30px;
+            }
             img{
                 max-height: 30px;
+                &:hover{
+                    filter: brightness(0) invert(0);
+                }
+                &:focus{
+                    filter: brightness(0) invert(0);
+                }
             }
         }
     }
-}
-.contactInfo{
-    h4{
+    h4 {
         text-transform: lowercase;
     }
-    span{
+    span {
         display: block;
     }
 }

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* SITE FONTS */
-/* SITE COLOURS */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
@@ -230,10 +228,8 @@ html {
   overflow: hidden;
 }
 
-/* import Lora bold, Roboto bold & regular fonts*/
 html {
   font-size: 125%;
-  /* set our root element font-size to 125%, then 1 rem = 20px */
 }
 
 body {
@@ -460,7 +456,6 @@ br {
           filter: brightness(0) invert(1);
 }
 
-/************* HOME PAGE HEADER STARTS*************/
 .homeHeader {
   background-color: #f6a823;
   min-height: 75vh;
@@ -526,8 +521,6 @@ br {
           box-shadow: white 15px 15px;
 }
 
-/************* HOME PAGE HEADER ENDS*************/
-/************* BLOG & CONTACT PAGE HEADER STARTS*************/
 .blogHeader, .contactHeader {
   background-position: center;
   background-repeat: no-repeat;
@@ -559,7 +552,6 @@ br {
   background-image: url("../assets/contact-image-1.jpg");
 }
 
-/************* BLOG & CONTACT PAGE HEADER ENDS*************/
 .about {
   padding: 40px 0 120px;
   background-color: #f0efed;
@@ -912,6 +904,7 @@ form input:first-of-type {
 form textarea {
   margin: 20px 0;
   min-width: 100%;
+  max-width: 100%;
   resize: none;
 }
 
@@ -941,14 +934,23 @@ form textarea {
   display: flex;
 }
 .contactInfo ul li {
+  margin-right: 10%;
+}
+.contactInfo ul li a {
   min-height: 30px;
   min-width: 30px;
-  margin-right: 10%;
 }
 .contactInfo ul li img {
   max-height: 30px;
 }
-
+.contactInfo ul li img:hover {
+  -webkit-filter: brightness(0) invert(0);
+          filter: brightness(0) invert(0);
+}
+.contactInfo ul li img:focus {
+  -webkit-filter: brightness(0) invert(0);
+          filter: brightness(0) invert(0);
+}
 .contactInfo h4 {
   text-transform: lowercase;
 }
@@ -971,7 +973,6 @@ footer p {
   padding: 10px 0;
 }
 
-/* LARGE SCREEN MEDIA QUERIES */
 @media (min-width: 2800px) {
   .homeHeader {
     min-height: 25vh;
@@ -993,9 +994,7 @@ footer p {
     font-size: 8vw;
   }
 }
-/* TABLET MEDIA QUERIES */
 @media (max-width: 940px) {
-  /********** NAV MEDIA QUERIES START **********/
   .desktopNav {
     position: absolute;
     left: -2000px;
@@ -1005,8 +1004,6 @@ footer p {
     position: revert;
   }
 
-  /********** NAV MEDIA QUERIES END **********/
-  /********** HEADER MEDIA QUERIES START **********/
   .headerContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1038,14 +1035,11 @@ footer p {
 .contactHeader {
     min-height: 20vh;
   }
-
   .blogHeader h2,
 .contactHeader h2 {
     font-size: 3rem;
   }
 
-  /********** HEADER MEDIA QUERIES END **********/
-  /********** FACTS SECTION MEDIA QUERIES START **********/
   .favThings,
 .travel {
     background: none;
@@ -1071,8 +1065,8 @@ footer p {
 
   .favThingsImage {
     margin-bottom: 20px;
-    -webkit-box-shadow: #a82706 10px 10px;
-            box-shadow: #a82706 10px 10px;
+    -webkit-box-shadow: #a82706 8px 8px;
+            box-shadow: #a82706 8px 8px;
   }
 
   .travelContent {
@@ -1091,17 +1085,15 @@ footer p {
 
   .travelImage {
     margin-bottom: 20px;
-    -webkit-box-shadow: #f6a823 -10px 10px;
-            box-shadow: #f6a823 -10px 10px;
+    -webkit-box-shadow: #f6a823 -8px 8px;
+            box-shadow: #f6a823 -8px 8px;
   }
 
-  /********** FACTS SECTION MEDIA QUERIES END **********/
   .categories ul li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
 
-  /********** JOURNEY MEDIA QUERIES START **********/
   .journey {
     padding: 50px 0;
   }
@@ -1122,8 +1114,6 @@ footer p {
     text-align: center;
   }
 
-  /******************** BLOG PAGE MEDIA QUERIES START ********************/
-  /********** BLOG PAGE MEDIA QUERIES START **********/
   .blogContent .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1158,7 +1148,6 @@ footer p {
         flex-basis: 50%;
   }
 
-  /********** CONTACT PAGE MEDIA QUERIES START **********/
   .contactContent .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1170,22 +1159,18 @@ footer p {
     margin: 30px 0;
   }
 }
-/* MOBILE MEDIA QUERIES */
 @media (max-width: 600px) {
-  /********** BASE MEDIA QUERIES START **********/
   a.moreButton {
     min-width: 100%;
   }
 
-  /********** BASE MEDIA QUERIES END **********/
-  /********** HEADER MEDIA QUERIES START **********/
   .homeHeader {
     min-height: 56vh;
   }
 
   .headerImage img {
-    -webkit-box-shadow: white 5px 5px;
-            box-shadow: white 5px 5px;
+    -webkit-box-shadow: white 8px 8px;
+            box-shadow: white 8px 8px;
   }
 
   .blogHeader h2,
@@ -1193,8 +1178,6 @@ footer p {
     font-size: 2rem;
   }
 
-  /********** HEADER MEDIA QUERIES END **********/
-  /********** ABOUT MEDIA QUERIES START **********/
   .about .wrapper h3 {
     text-align: center;
   }
@@ -1202,8 +1185,6 @@ footer p {
     min-width: 100%;
   }
 
-  /********** ABOUT MEDIA QUERIES END **********/
-  /********** CATEGORIES MEDIA QUERIES START **********/
   .categories {
     padding: 50px 0;
   }
@@ -1248,8 +1229,6 @@ footer p {
     margin: 10px 0;
   }
 
-  /******************** BLOG PAGE MEDIA QUERIES START ********************/
-  /********** BLOG PAGE MEDIA QUERIES START **********/
   .blogPost h3, .blogPost p:first-of-type {
     text-align: center;
   }
@@ -1266,7 +1245,6 @@ footer p {
     margin: 40px 0 20px;
   }
 
-  /********** FORM MEDIA QUERIES START **********/
   .inputKeys {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -1,10 +1,3 @@
-/************* HOME PAGE HEADER STARTS*************/
-// .homeHeader{
-//     background-color: $orangeYellow;
-//     height: 82vh;
-//     justify-content: center;
-// }
-
 .homeHeader{
     background-color: $orangeYellow;
     min-height: 75vh;
@@ -53,9 +46,7 @@
         box-shadow: white 15px 15px;
     }
 }
-/************* HOME PAGE HEADER ENDS*************/
 
-/************* BLOG & CONTACT PAGE HEADER STARTS*************/
 .blogHeader, .contactHeader{
     background-position: center;
     background-repeat: no-repeat;
@@ -84,5 +75,4 @@
     background-image: url("../assets/contact-image-1.jpg");
 }
 
-/************* BLOG & CONTACT PAGE HEADER ENDS*************/
 

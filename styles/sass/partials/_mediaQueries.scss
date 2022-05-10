@@ -1,4 +1,3 @@
-/* LARGE SCREEN MEDIA QUERIES */
 @media (min-width: 2800px) {
     .homeHeader {
         min-height: 25vh;
@@ -13,7 +12,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 2799px){
-    .homeHeader{
+    .homeHeader {
         min-height: 25vh;
     }
     .headerContent .headerText h2 {
@@ -21,216 +20,177 @@
     }
 }
 
-
-
-/* TABLET MEDIA QUERIES */
 @media (max-width: 940px) {
-/********** NAV MEDIA QUERIES START **********/
-.desktopNav {
-    position: absolute;
-    left: -2000px;
-}
-
-.mobileNav {
-    position: revert;
-}
-
-/********** NAV MEDIA QUERIES END **********/
-
-/********** HEADER MEDIA QUERIES START **********/
-.headerContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.headerImage {
-    margin-top: 10%;
-    min-height: 60%;
-}   
-
-.headerContent {
-    margin-right: 0;
-    .headerText h2 {
-        font-size: 18vw;
-    }
-
-    .headerTextImage {
+    .desktopNav {
         position: absolute;
-        top: -20%;
-        left: -10%;
+        left: -2000px;
     }
-}
 
-.blogHeader,
-.contactHeader {
-    min-height: 20vh;
-}
-
-.blogHeader h2,
-.contactHeader h2{
-    font-size: 3rem;
-}
-
-/********** HEADER MEDIA QUERIES END **********/
-
-/********** FACTS SECTION MEDIA QUERIES START **********/
-.favThings,
-.travel {
-    background: none;
-    transform: translateY(0);
-}
-
-.favThingsContent {
-    flex-direction: column;
-}
-
-.favThingsText,
-.travelText {
-    margin: 0;
-
-    h3 {
-        margin-top: 30px;
+    .mobileNav {
+        position: revert;
     }
-}
 
-.favThingsImage {
-    margin-bottom: 20px;
-    box-shadow: $rustRed 10px 10px;
-}
+    .headerContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
-.travelContent {
-    flex-direction: column-reverse;
-}
+    .headerImage {
+        margin-top: 10%;
+        min-height: 60%;
+    }   
 
-.travelText {
-    text-align: left;
-    align-items: flex-start;
-}
+    .headerContent {
+        margin-right: 0;
+        .headerText h2 {
+            font-size: 18vw;
+        }
+        .headerTextImage {
+            position: absolute;
+            top: -20%;
+            left: -10%;
+        }
+    }
 
-.travelImage {
-    margin-bottom: 20px;
-    box-shadow: $orangeYellow -10px 10px;
-}
-/********** FACTS SECTION MEDIA QUERIES END **********/
+    .blogHeader,
+    .contactHeader {
+        min-height: 20vh;
+        h2 {
+            font-size: 3rem;
+        }
+    }
 
-.categories {
-    ul{
-        li{
+    .favThings,
+    .travel {
+        background: none;
+        transform: translateY(0);
+    }
+
+    .favThingsContent {
+        flex-direction: column;
+    }
+
+    .favThingsText,
+    .travelText {
+        margin: 0;
+        h3 {
+            margin-top: 30px;
+        }
+    }
+
+    .favThingsImage {
+        margin-bottom: 20px;
+        box-shadow: $rustRed 8px 8px;
+    }
+
+    .travelContent {
+        flex-direction: column-reverse;
+    }
+
+    .travelText {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .travelImage {
+        margin-bottom: 20px;
+        box-shadow: $orangeYellow -8px 8px;
+    }
+
+    .categories {
+        ul li {
             flex-basis: calc(100%);
         }
     }
-}
 
-/********** JOURNEY MEDIA QUERIES START **********/
-.journey{
-    padding: 50px 0;
-    .wrapper{
-        flex-direction: column;
-        align-items: center;
+    .journey {
+        padding: 50px 0;
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
     }
-}
 
-.journeyText{
-    margin: 40px 0 0;
-    h3{
-        text-align: center;
+    .journeyText {
+        margin: 40px 0 0;
+        h3 {
+            text-align: center;
+        }
     }
-}
 
-/******************** BLOG PAGE MEDIA QUERIES START ********************/
-/********** BLOG PAGE MEDIA QUERIES START **********/
-.blogContent {
-    .wrapper{
-        flex-direction: column-reverse;
+    .blogContent .wrapper {
+            flex-direction: column-reverse;
             h4 {
                 margin: 0 0 10px;
             }
+        }
+
+    .sideContent {
+        display: flex;
+        margin:20px 0 0 0;
+    }
+
+    .profile {
+        flex-basis: calc(50%);
+        display: flex;
+        margin: 0 10px 0 0;
+        .profileText{
+            margin-left: 20px;
+        }
+    }
+
+    .recentPost {
+        flex-basis: 50%;
+    }
+
+    .contactContent .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .contactInfo {
+        margin: 30px 0;
     }
 }
 
-.sideContent{
-    display: flex;
-    margin:20px 0 0 0;
-}
-
-.profile{
-    flex-basis: calc(50%);
-    display: flex;
-    margin: 0 10px 0 0;
-    .profileText{
-        margin-left: 20px;
-    }
-}
-
-.recentPost{
-    flex-basis: 50%;
-}
-
-/********** CONTACT PAGE MEDIA QUERIES START **********/
-.contactContent .wrapper{
-    flex-direction: column-reverse;
-}
-
-.contactInfo{
-    margin: 30px 0;
-}
-}
-
-
-/* MOBILE MEDIA QUERIES */
 @media (max-width: 600px) {
-    /********** BASE MEDIA QUERIES START **********/
     a.moreButton {
         min-width: 100%;
     }
-    /********** BASE MEDIA QUERIES END **********/
-
-    /********** HEADER MEDIA QUERIES START **********/
 
     .homeHeader {
         min-height: 56vh;
     }
 
-    .headerImage img{
-    box-shadow: white 5px 5px;
+    .headerImage img {
+    box-shadow: white 8px 8px;
     }
-.blogHeader h2,
-.contactHeader h2{
-    font-size: 2rem
-}
 
-    /********** HEADER MEDIA QUERIES END **********/
+    .blogHeader h2,
+    .contactHeader h2 {
+        font-size: 2rem
+    }
 
-    /********** ABOUT MEDIA QUERIES START **********/
-    .about {
-        .wrapper {
-            h3 {
-                text-align: center;
-            }
-            p{
-                min-width: 100%;
-                
-            }
+    .about .wrapper {
+        h3 {
+            text-align: center;
+        }
+        p {
+            min-width: 100%;
         }
     }
     
-    /********** ABOUT MEDIA QUERIES END **********/
-    
-    /********** CATEGORIES MEDIA QUERIES START **********/
+
     .categories {
         padding: 50px 0;
-        ul{
-            li {
-                flex-direction: column;
-                align-items: center;
-                margin: 0;
-            }
+        ul li {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
         }
     }
 
-    .categoriesImage{
+    .categoriesImage {
         margin: 0;
-
         .icon {
             position: revert;
             margin: 10px;
@@ -239,50 +199,48 @@
         }
     }
 
-    .categoriesText {
-        h3 {
+    .categoriesText h3 {
             text-align: center;
         }
-    }
 
     .gallery {
         padding: 50px 0;
         ul {
             align-items: center;
             flex-direction: column;
-            li{
+            li {
                 margin: 10px 0;
             }
         }
     }
 
-/******************** BLOG PAGE MEDIA QUERIES START ********************/
-/********** BLOG PAGE MEDIA QUERIES START **********/
-    .blogPost{
+
+    .blogPost {
         h3, p:first-of-type{
             text-align: center;
         }
     }
+
     .sideContent {
         flex-direction: column;
         margin: 0;
     }
-    .profile{
+
+    .profile {
         margin: 40px 0 20px;
     }
+    
+    .inputKeys {
+        flex-direction: column;
+    }
 
-/********** FORM MEDIA QUERIES START **********/
-.inputKeys {
-    flex-direction: column;
-}
-
-form{
-    input {
-        flex-basis: 100%;
-        &:first-of-type {
-            margin-right: 0;
-            margin-bottom: 20px;
+    form{
+        input {
+            flex-basis: 100%;
+            &:first-of-type {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
     }
-}
 }
