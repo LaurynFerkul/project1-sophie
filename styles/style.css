@@ -374,12 +374,20 @@ br {
 
 /******* BASE STYLES END *******/
 /******* DESKTOP NAV STYLES START *******/
-.desktopNav {
-  padding: 10px 0;
+nav {
   background-color: #f6a823;
-  position: relative;
 }
-.desktopNav ul {
+
+nav .wrapper {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+nav .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,22 +395,22 @@ br {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.desktopNav h1 {
+nav .wrapper h1 {
   font-size: 2.1rem;
   line-height: inherit;
   margin: 0 15px;
 }
-.desktopNav a {
+nav .wrapper a {
   margin: 0 10px;
   padding: 10px;
   border: 2px solid transparent;
   -webkit-transition: color 0.7s ease;
   transition: color 0.7s ease;
 }
-.desktopNav a:hover {
+nav .wrapper a:hover {
   color: #f0efed;
 }
-.desktopNav a:focus {
+nav .wrapper a:focus {
   color: #f0efed;
 }
 
@@ -413,53 +421,17 @@ br {
 /******* DESKTOP NAV STYLES START *******/
 /******* MOBILE NAV STYLES START *******/
 .mobileNav {
-  position: absolute;
-  right: -10000px;
-  width: 100vw;
-  overflow: hidden;
-  background: #f6a823;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0;
-}
-.mobileNav .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.mobileNav h1 {
-  font-size: 2.1rem;
-  line-height: 2.2rem;
-  -webkit-transition: color 0.7s ease;
-  transition: color 0.7s ease;
-  margin-left: 30px;
-}
-.mobileNav h1:hover {
-  color: #f0efed;
-}
-.mobileNav h1:focus {
-  color: #f0efed;
-}
-.mobileNav button {
-  min-width: 1.5rem;
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.mobileNav button img:hover {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-.mobileNav button img:focus {
-  color: #f0efed;
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  display: none;
 }
 
-/******* MOBILE NAV STYLES END *******/
+.mobileNav div {
+  width: 30px;
+  height: 5px;
+  margin: 5px 0;
+  border-radius: 20px;
+  background-color: #2c2c2c;
+}
+
 /******* HOME PAGE HEADER STYLES START *******/
 .homeHeader {
   background-color: #f6a823;
@@ -1061,7 +1033,31 @@ footer p {
   /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
   /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
   .mobileNav {
-    position: revert;
+    display: revert;
+  }
+
+  nav .wrapper ul {
+    position: absolute;
+    background-color: #f6a823;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    height: calc(100vh - 55px);
+    z-index: 1;
+    left: -2000px;
+    top: 55px;
+  }
+
+  .logo {
+    display: none;
   }
 
   /******* MOBILE NAV STYLES END - TABLET SCREENS *******/

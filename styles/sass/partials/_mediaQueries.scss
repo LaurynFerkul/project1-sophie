@@ -36,7 +36,25 @@
 
     /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
     .mobileNav {
-        position: revert;
+       display: revert;
+   
+    }
+
+    nav .wrapper ul {
+        position: absolute;
+        background-color: $orangeYellow;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 70%;
+        height: calc(100vh - 55px);
+        z-index: 1;
+        left: -2000px;
+        top: 55px;
+    }
+    
+    .logo {
+        display: none;
     }
     /******* MOBILE NAV STYLES END - TABLET SCREENS *******/
 
