@@ -1,15 +1,17 @@
 /******* DESKTOP NAV STYLES START *******/
 nav{
     background-color: $orangeYellow;
+
 }
 nav .wrapper{
     padding: 10px 0;
     display: flex;
     height: fit-content;
-    ul {
-        display: flex;
-        justify-content: center;
-    }
+    justify-content: center;
+    .navMenu {
+            display: flex;
+            justify-content: center;
+        }
     h1 {
         font-size: 2.1rem;
         line-height: inherit;
@@ -37,9 +39,14 @@ nav .wrapper{
 /******* DESKTOP NAV STYLES START *******/
 
 /******* MOBILE NAV STYLES START *******/
-.mobileNav{
+button.mobileNav{
+    background: none;
+    border: none;
+    padding: 0;
+    min-width: fit-content;
     display: none;
 }
+
 .mobileNav div {
     width: 30px;
     height: 5px;

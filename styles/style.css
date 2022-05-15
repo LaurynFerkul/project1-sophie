@@ -386,8 +386,11 @@ nav .wrapper {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-nav .wrapper ul {
+nav .wrapper .navMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +423,13 @@ nav .wrapper a:focus {
 
 /******* DESKTOP NAV STYLES START *******/
 /******* MOBILE NAV STYLES START *******/
-.mobileNav {
+button.mobileNav {
+  background: none;
+  border: none;
+  padding: 0;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   display: none;
 }
 
@@ -1032,11 +1041,16 @@ footer p {
 
   /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
   /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
-  .mobileNav {
+  button.mobileNav {
     display: revert;
   }
 
-  nav .wrapper ul {
+  nav .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav .wrapper .navMenu {
     position: absolute;
     background-color: #f6a823;
     -webkit-box-orient: vertical;
@@ -1049,11 +1063,32 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 70%;
+    width: 50%;
     height: calc(100vh - 55px);
     z-index: 1;
     left: -2000px;
     top: 55px;
+    -webkit-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+  }
+  nav .wrapper .navMenu.active {
+    left: 0;
+  }
+
+  .mobileNav.active {
+    -webkit-transition: all 12s ease;
+    transition: all 12s ease;
+  }
+  .mobileNav.active .line1 {
+    -webkit-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
+  }
+  .mobileNav.active .line2 {
+    opacity: 0;
+  }
+  .mobileNav.active .line3 {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
   }
 
   .logo {

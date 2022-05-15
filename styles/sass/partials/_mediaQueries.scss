@@ -35,24 +35,43 @@
     /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
 
     /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
-    .mobileNav {
+    button.mobileNav {
        display: revert;
    
     }
-
-    nav .wrapper ul {
-        position: absolute;
-        background-color: $orangeYellow;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 70%;
-        height: calc(100vh - 55px);
-        z-index: 1;
-        left: -2000px;
-        top: 55px;
+    nav .wrapper {
+        justify-content: flex-start;
+        .navMenu {
+                position: absolute;
+                background-color: $orangeYellow;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 50%;
+                height: calc(100vh - 55px);
+                z-index: 1;
+                left: -2000px;
+                top: 55px;
+                transition: left .5s ease;
+            }
+        .navMenu.active {
+            left: 0;
+        }
     }
-    
+
+    .mobileNav.active{
+        transition: all 12s ease;
+        .line1 {
+                transform: translateY(10px) rotate(45deg);
+            }
+        .line2 {
+                opacity: 0;
+            }
+        .line3 {
+            transform: translateY(-10px) rotate(-45deg);
+        }
+    }
+
     .logo {
         display: none;
     }
