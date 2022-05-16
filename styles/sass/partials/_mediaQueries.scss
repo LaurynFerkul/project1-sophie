@@ -27,14 +27,7 @@
 
 /****************** MEDIA QUERY FOR TABLET START ******************/
 @media (max-width: 940px) {
-    /******* DESKTOP NAV STYLES START - TABLET SCREENS *******/
-    .desktopNav {
-        position: absolute;
-        left: -2000px;
-    }
-    /******* DESKTOP NAV STYLES END - TABLET SCREENS *******/
-
-    /******* MOBILE NAV STYLES START - TABLET SCREENS *******/
+    /******* NAV STYLES START - TABLET SCREENS *******/
     button.mobileNav {
        display: revert;
    
@@ -75,7 +68,7 @@
     .logo {
         display: none;
     }
-    /******* MOBILE NAV STYLES END - TABLET SCREENS *******/
+    /******* NAV STYLES END - TABLET SCREENS *******/
 
     /************** HOME PAGE STYLES START - TABLET SCREENS **************/
     /******* HEADER STYLES START - TABLET SCREENS *******/

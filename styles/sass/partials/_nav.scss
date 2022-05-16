@@ -54,45 +54,4 @@ button.mobileNav{
     border-radius: 20px;
     background-color: $black;
 }
-// .mobileNav {
-//     position: absolute;
-//     right: -10000px;
-//     width: 100vw;
-//     overflow: hidden;
-//     background: $orangeYellow;
-//     display: flex;
-//     padding: 10px 0;
-//     .wrapper {
-//         display: flex;
-//     }
-//     h1 {
-//         font-size: 2.1rem;
-//         line-height: 2.2rem;
-//         transition: color .7s ease;
-//         margin-left: 30px;
-//         &:hover {
-//             color: $whiteShade;
-//         } 
-//         &:focus {
-//             color: $whiteShade;
-//         }
-//     }
-//     button {
-//         min-width: 1.5rem;
-//         background-color: transparent;
-//         padding: 0;
-//         border: none;
-//         align-self: flex-end;
-//         img{
-//             &:hover {
-//                 filter: brightness(0) invert(1);
-//             }
-            
-//             &:focus {
-//                 color: $whiteShade;
-//                 filter: brightness(0) invert(1);
-//             }
-//         }
-//     } 
-// }
-// /******* MOBILE NAV STYLES END *******/
+/******* MOBILE NAV STYLES END *******/
